@@ -1,0 +1,36 @@
+{
+    "train_config": {
+        "resume": "",
+        "Model": "Enc_C3Netv2",
+        "learning_rate": 10e-4,
+        "learning_rate2": 10e-4,
+
+        "num_classes" : 20,
+        "p" : 2,
+        "q" : 8,
+        "chnn" : 1,
+        "D_rate" : [2,4,8,16],
+        "batch_size2": 16,
+        "scaleIn2" : 1,
+
+        "epochs": 300,
+        "save_dir": "./result",
+
+        "optim" : "Adam",
+        "lrsch" : "multistep",
+        "wd_tfmode" : true,
+        "weight_decay" : 2e-4,
+        "tf_decay" : 0.05
+
+    },
+    "data_config": {
+        "dataset_name": "citymultiscaleCV",
+         "cached_data_file" : "./data/city.p",
+         "data_dir": "../../Link512DATA/cityscape",
+        "classes" : 20,
+        "batch_size": 24,
+        "scaleIn" : 8,
+        "num_work" : 4,
+        "baseSize" : 1024
+    }
+}

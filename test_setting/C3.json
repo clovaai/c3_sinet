@@ -1,0 +1,34 @@
+{
+    "test_config": {
+        "model_name": "result/C3Net/C3Net_setting2.pth",
+        "Model": "Dnc_C3Net",
+
+        "num_classes" : 20,
+        "p" : 2,
+        "q" : 8,
+        "chnn" : 1,
+        "D_rate" : [2,3,7,13],
+        "batch_size2": 8,
+        "scaleIn2" : 1,
+
+        "epochs": 3,
+        "save_dir": "./result",
+
+        "optim" : "Adam",
+        "lrsch" : "step",
+        "wd_tfmode" : true,
+        "weight_decay" : 2e-4,
+        "tf_decay" : 0.05
+
+    },
+    "data_config": {
+        "dataset_name": "cityCV",
+         "cached_data_file" : "./data/city.p",
+         "data_dir": "../../Link512DATA/cityscape",
+        "classes" : 20,
+        "batch_size": 12,
+        "scaleIn" : 8,
+        "num_work" : 4,
+        "baseSize" : 1024
+    }
+}
