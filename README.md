@@ -12,6 +12,10 @@
 - visdom
 
 
+## NEWS
+Our SINET is included Qualcomm AI hub!!!!!
+The model can support Pixel, Galaxy, Xiaomi and so on.
+Please download in [here](https://aihub.qualcomm.com/models/sinet) 
 
 ## Model
 
